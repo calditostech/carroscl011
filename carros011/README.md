@@ -12,4 +12,4 @@ o sistema faz o cadastramento de automeveis e aparece na tabela
 
 Criado com Laravel e Vue.js
 
-<img src="../public/img/tela.png">
+<img src="./public/img/tela.png">
