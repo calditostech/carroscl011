@@ -15,5 +15,14 @@ use App\Http\Controllers\CarrosController;
 */
 
 Route::get('{any}', function () {
-    return view('welcome');
+    return view('layout.app');
 })->where('any', '.*');
+
+Route::get('/create', function () {
+    return view('create');
+ });
+
+ Route::get('/edit', function () {
+    return view('edit');
+ });
+

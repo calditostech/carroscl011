@@ -17,10 +17,10 @@ class CarrosController extends Controller
     {
         $carro = new Carros([
             'marca' => $request->input('marca'),
-            'marca' => $request->input('modelo'),
-            'marca' => $request->input('ano'),
-            'marca' => $request->input('fabricacao'),
-            'detail' => $request->input('placa')
+            'modelo' => $request->input('modelo'),
+            'ano' => $request->input('ano'),
+            'fabricacao' => $request->input('fabricacao'),
+            'placa' => $request->input('placa')
         ]);
         $carro->save();
 
