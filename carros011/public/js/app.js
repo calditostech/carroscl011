@@ -1879,7 +1879,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -37816,76 +37815,64 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("h2", { staticClass: "text-center" }, [_vm._v("Lista de Carros")]),
+  return _c("div", [
+    _c("h2", { staticClass: "text-center" }, [_vm._v("Lista de Carros")]),
+    _vm._v(" "),
+    _c("table", { staticClass: "table" }, [
+      _vm._m(0),
       _vm._v(" "),
       _c(
-        "router-link",
-        { staticClass: "btn btn-primary", attrs: { to: "/create" } },
-        [_vm._v("Adicionar Carros")]
-      ),
-      _vm._v(" "),
-      _c("table", { staticClass: "table" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _c(
-          "tbody",
-          _vm._l(_vm.carros, function(carro) {
-            return _c("tr", { key: carro.id }, [
-              _c("td", [_vm._v(_vm._s(carro.id))]),
-              _vm._v(" "),
-              _c("td", [_vm._v(_vm._s(carro.marca))]),
-              _vm._v(" "),
-              _c("td", [_vm._v(_vm._s(carro.modelo))]),
-              _vm._v(" "),
-              _c("td", [_vm._v(_vm._s(carro.ano))]),
-              _vm._v(" "),
-              _c("td", [_vm._v(_vm._s(carro.fabricacao))]),
-              _vm._v(" "),
-              _c("td", [_vm._v(_vm._s(carro.placa))]),
-              _vm._v(" "),
-              _c("td", [
-                _c(
-                  "div",
-                  { staticClass: "btn-group", attrs: { role: "group" } },
-                  [
-                    _c(
-                      "router-link",
-                      {
-                        staticClass: "btn btn-success",
-                        attrs: {
-                          to: { name: "edit", params: { id: carro.id } }
+        "tbody",
+        _vm._l(_vm.carros, function(carro) {
+          return _c("tr", { key: carro.id }, [
+            _c("td", [_vm._v(_vm._s(carro.id))]),
+            _vm._v(" "),
+            _c("td", [_vm._v(_vm._s(carro.marca))]),
+            _vm._v(" "),
+            _c("td", [_vm._v(_vm._s(carro.modelo))]),
+            _vm._v(" "),
+            _c("td", [_vm._v(_vm._s(carro.ano))]),
+            _vm._v(" "),
+            _c("td", [_vm._v(_vm._s(carro.fabricacao))]),
+            _vm._v(" "),
+            _c("td", [_vm._v(_vm._s(carro.placa))]),
+            _vm._v(" "),
+            _c("td", [
+              _c(
+                "div",
+                { staticClass: "btn-group", attrs: { role: "group" } },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "btn btn-success",
+                      attrs: { to: { name: "edit", params: { id: carro.id } } }
+                    },
+                    [_vm._v("Editar")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-danger",
+                      on: {
+                        click: function($event) {
+                          return _vm.deleteCarro(carro.id)
                         }
-                      },
-                      [_vm._v("Editar")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-danger",
-                        on: {
-                          click: function($event) {
-                            return _vm.deleteCarro(carro.id)
-                          }
-                        }
-                      },
-                      [_vm._v("Deletar")]
-                    )
-                  ],
-                  1
-                )
-              ])
+                      }
+                    },
+                    [_vm._v("Deletar")]
+                  )
+                ],
+                1
+              )
             ])
-          }),
-          0
-        )
-      ])
-    ],
-    1
-  )
+          ])
+        }),
+        0
+      )
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {

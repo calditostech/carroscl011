@@ -12,6 +12,7 @@
 
 <body>
     <div id="app">
+    <createcarros-component></createcarros-component>
     <allcarros-component></allcarros-component>
     </div>
     <script src="{{ asset('js/app.js') }}" type="text/javascript"></script>

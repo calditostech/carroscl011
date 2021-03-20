@@ -1,7 +1,6 @@
 <template>
     <div>
         <h2 class="text-center">Lista de Carros</h2>
-         <router-link to="/create" class="btn btn-primary">Adicionar Carros</router-link>
         <table class="table">
             <thead>
             <tr>
